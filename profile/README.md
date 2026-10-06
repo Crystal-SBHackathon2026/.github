@@ -12,7 +12,7 @@ SoftBank Hackathon 2026 powered by KOREC & Progate · 예선 2
 <br>
 
 ![기간](https://img.shields.io/badge/기간-2026.10.05~10.11-555555?style=flat-square)
-![장소](https://img.shields.io/badge/장소-부산%20하이스퀘어-1D9E75?style=flat-square)
+![장소](https://img.shields.io/badge/장소-부산%20지오파트너스-1D9E75?style=flat-square)
 ![주최](https://img.shields.io/badge/SoftBank%20Hackathon-2026-185FA5?style=flat-square)
 
 </div>
