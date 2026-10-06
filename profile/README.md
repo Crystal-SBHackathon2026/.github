@@ -27,13 +27,6 @@ Team Crystal은 이 고민을 **AI가 대신 판단하고 실행하는 배포 �
 
 > 세부 아이디어는 팀 회의 후 확정해 이곳에 업데이트합니다.
 
-## 저장소
-
-| 저장소 | 설명 |
-|---|---|
-| [crystal-deploy](https://github.com/Crystal-SBHackathon2026/crystal-deploy) | 배포 시스템 본체 |
-| [sample-app](https://github.com/Crystal-SBHackathon2026/sample-app) | 배포 대상 샘플 앱 |
-
 ## 팀원
 
 | 이름 | 역할 | GitHub |
