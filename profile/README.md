@@ -32,7 +32,7 @@ Team Crystal은 이 고민을 **AI가 대신 판단하고 실행하는 배포 �
 | 저장소 | 설명 |
 |---|---|
 | [crystal-deploy](https://github.com/Crystal-SBHackathon2026/crystal-deploy) | 배포 시스템 본체 |
-| [sample-guestbook](https://github.com/Crystal-SBHackathon2026/sample-guestbook) | 배포 대상 샘플 앱 (방명록) |
+| [sample-app](https://github.com/Crystal-SBHackathon2026/sample-app) | 배포 대상 샘플 앱 |
 
 ## 팀원
 
