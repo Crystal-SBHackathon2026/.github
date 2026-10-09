@@ -63,12 +63,12 @@ SoftBank Hackathon 2026 powered by KOREC & Progate · 예선 2
 
 ## 팀원
 
-| 파트 | 담당 | GitHub |
-|---|---|---|
-| AI 검토 바깥 뼈대 | Review API · Kafka · 워커 실행 틀 · 업무 DB · 커밋 연동 | [@Hyeyeon-Kim](https://github.com/Hyeyeon-Kim) |
-| AI 판단 로직 | 정적 검사 · 근거 검색 · LLM 판단 · 평가셋 · overlay 렌더러 | [@yeonjae1220](https://github.com/yeonjae1220) |
-| 클라우드 인프라 | EKS 구축 · Terraform · 네트워크 · 시크릿 · 권한 | [@coldgeon](https://github.com/coldgeon) |
-| CI/CD · 배포 자동화 | CI 파이프라인 · GitOps · Argo CD · 카나리 · 배포 에이전트 | [@FAITRUEE](https://github.com/FAITRUEE) |
+| 이름 | 파트 | 담당 | GitHub |
+|---|---|---|---|
+| 김혜연 <sub>팀장</sub> | AI 검토 바깥 뼈대 | Review API · Kafka · 워커 실행 틀 · 업무 DB · 커밋 연동 | [@Hyeyeon-Kim](https://github.com/Hyeyeon-Kim) |
+| 김연재 | AI 판단 로직 | 정적 검사 · 근거 검색 · LLM 판단 · 평가셋 · overlay 렌더러 | [@yeonjae1220](https://github.com/yeonjae1220) |
+| 박찬건 | 클라우드 인프라 | EKS 구축 · Terraform · 네트워크 · 시크릿 · 권한 | [@coldgeon](https://github.com/coldgeon) |
+| 이성진 | CI/CD · 배포 자동화 | CI 파이프라인 · GitOps · Argo CD · 카나리 · 배포 에이전트 | [@FAITRUEE](https://github.com/FAITRUEE) |
 
 ## 일정
 
