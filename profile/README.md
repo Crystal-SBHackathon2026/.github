@@ -63,12 +63,50 @@ SoftBank Hackathon 2026 powered by KOREC & Progate · 예선 2
 
 ## 팀원
 
-| 이름 | 파트 | 담당 | GitHub |
-|---|---|---|---|
-| 김혜연 <sub>팀장</sub> | AI 검토 바깥 뼈대 | Review API · Kafka · 워커 실행 틀 · 업무 DB · 커밋 연동 | [@Hyeyeon-Kim](https://github.com/Hyeyeon-Kim) |
-| 김연재 | AI 판단 로직 | 정적 검사 · 근거 검색 · LLM 판단 · 평가셋 · overlay 렌더러 | [@yeonjae1220](https://github.com/yeonjae1220) |
-| 박찬건 | 클라우드 인프라 | EKS 구축 · Terraform · 네트워크 · 시크릿 · 권한 | [@coldgeon](https://github.com/coldgeon) |
-| 이성진 | CI/CD · 배포 자동화 | CI 파이프라인 · GitOps · Argo CD · 카나리 · 배포 에이전트 | [@FAITRUEE](https://github.com/FAITRUEE) |
+<table>
+  <tr>
+    <td align="center" width="25%">
+      <a href="https://github.com/Hyeyeon-Kim">
+        <img src="https://github.com/Hyeyeon-Kim.png?size=200" width="110" alt="Hyeyeon-Kim"><br>
+        <b>김혜연</b>
+      </a><br>
+      <sub>팀장</sub>
+    </td>
+    <td align="center" width="25%">
+      <a href="https://github.com/yeonjae1220">
+        <img src="https://github.com/yeonjae1220.png?size=200" width="110" alt="yeonjae1220"><br>
+        <b>김연재</b>
+      </a><br>
+      <sub>&nbsp;</sub>
+    </td>
+    <td align="center" width="25%">
+      <a href="https://github.com/coldgeon">
+        <img src="https://github.com/coldgeon.png?size=200" width="110" alt="coldgeon"><br>
+        <b>박찬건</b>
+      </a><br>
+      <sub>&nbsp;</sub>
+    </td>
+    <td align="center" width="25%">
+      <a href="https://github.com/FAITRUEE">
+        <img src="https://github.com/FAITRUEE.png?size=200" width="110" alt="FAITRUEE"><br>
+        <b>이성진</b>
+      </a><br>
+      <sub>&nbsp;</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center"><b>AI 검토 바깥 뼈대</b></td>
+    <td align="center"><b>AI 판단 로직</b></td>
+    <td align="center"><b>클라우드 인프라</b></td>
+    <td align="center"><b>CI/CD · 배포 자동화</b></td>
+  </tr>
+  <tr>
+    <td align="center"><sub>Review API · Kafka<br>워커 실행 틀 · 업무 DB<br>커밋 연동</sub></td>
+    <td align="center"><sub>정적 검사 · 근거 검색<br>LLM 판단 · 평가셋<br>overlay 렌더러</sub></td>
+    <td align="center"><sub>EKS 구축 · Terraform<br>네트워크 · 시크릿<br>권한</sub></td>
+    <td align="center"><sub>CI 파이프라인 · GitOps<br>Argo CD · 카나리<br>배포 에이전트</sub></td>
+  </tr>
+</table>
 
 ## 일정
 
