@@ -63,8 +63,8 @@ SoftBank Hackathon 2026 powered by KOREC & Progate · 예선 2
 | [gitops](https://github.com/Crystal-SBHackathon2026/gitops) | Argo CD 배포 설정 (로컬 k3s · AWS EKS · GCP GKE) |
 | [sample-app](https://github.com/Crystal-SBHackathon2026/sample-app) | 데모용 샘플 웹앱 — 어느 환경이 응답했는지 표시 |
 | [sample-todo](https://github.com/Crystal-SBHackathon2026/sample-todo) | 앱 분석·변환 시연용 SQLite 할 일 앱 |
-| [oneaction-infra](https://github.com/Crystal-SBHackathon2026/oneaction-infra) | AWS 인프라 Terraform — VPC · EKS · RDS · MSK · ALB · ESO |
-| Terraform-infrastructure | 위 인프라의 운영 저장소 (비공개) |
+| [oneaction-infra](https://github.com/Crystal-SBHackathon2026/oneaction-infra) | **AWS 인프라 Terraform** — VPC · EKS · RDS · MSK · ALB · ESO |
+| Terraform-infrastructure | 같은 인프라의 운영 저장소. 시크릿이 들어 있어 비공개이며, 위 저장소가 공개용입니다 |
 | [.github](https://github.com/Crystal-SBHackathon2026/.github) | 조직 프로필 · 공용 이슈/PR 템플릿 |
 
 ## 팀원
