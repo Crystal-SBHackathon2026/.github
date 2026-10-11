@@ -29,6 +29,10 @@ SoftBank Hackathon 2026 powered by KOREC & Progate · 예선 2
 
 ![전체 흐름](https://raw.githubusercontent.com/Crystal-SBHackathon2026/.github/main/profile/architecture.png)
 
+> ### 🎬 [무엇을 시연할 수 있나 — 실제 화면으로 보기](https://github.com/Crystal-SBHackathon2026/.github/blob/main/profile/DEMO.md)
+>
+> AI가 **고친 경우** · **사람에게 넘긴 경우** · **통과시켰는데 가드가 막은 경우**, 그리고 배포 뒤 **자동 중단**까지. 2026-10-11 리허설에서 찍은 실제 화면입니다.
+
 ## 흐름
 
 | | 단계 | 하는 일 |
