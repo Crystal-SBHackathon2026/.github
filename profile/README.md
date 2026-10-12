@@ -62,6 +62,18 @@ SoftBank Hackathon 2026 powered by KOREC & Progate · 예선 2
 
 환경마다 배포 방식이 다른 이유는 조건이 다르기 때문입니다. 서울에는 Prometheus가 있어 "새 버전이 요청의 일부만 실패시키는" 것까지 잡아냅니다. 도쿄는 데이터베이스가 걸려 있어 옛 버전과 새 버전이 섞이면 안 되므로, 새 버전을 옆에 띄워두고 사람이 확인한 뒤 한 번에 바꿉니다.
 
+## 기술 스택
+
+| 분야 | 기술 |
+| --- | --- |
+| AI 검토 | Python 3.13 · LangGraph · Claude (Anthropic API) · Qdrant · fastembed (다국어 임베딩) · Pydantic |
+| 플랫폼 | FastAPI · Kafka (Amazon MSK) · PostgreSQL (Amazon RDS) |
+| 배포 자동화 | GitHub Actions · Argo CD · Argo Rollouts · Kustomize · Docker · GHCR · Trivy |
+| 배포 환경 | Kubernetes — AWS EKS · GCP GKE · k3s (로컬) |
+| 모니터링 | Prometheus · Grafana |
+| 인프라 | Terraform · AWS (VPC · ALB · API Gateway · Secrets Manager) · External Secrets Operator · GCP |
+| 샘플 앱 | Node.js · Express |
+
 ## 저장소
 
 | 저장소 | 내용 |
