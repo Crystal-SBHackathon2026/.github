@@ -65,14 +65,16 @@ SoftBank Hackathon 2026 powered by KOREC & Progate · 예선 2
 ## 기술 스택
 
 | 분야 | 기술 |
-| --- | --- |
-| AI 검토 | Python 3.13 · LangGraph · Claude (Anthropic API) · Qdrant · fastembed (다국어 임베딩) · Pydantic |
-| 플랫폼 | FastAPI · Kafka (Amazon MSK) · PostgreSQL (Amazon RDS) |
-| 배포 자동화 | GitHub Actions · Argo CD · Argo Rollouts · Kustomize · Docker · GHCR · Trivy |
-| 배포 환경 | Kubernetes — AWS EKS · GCP GKE · k3s (로컬) |
-| 모니터링 | Prometheus · Grafana |
-| 인프라 | Terraform · AWS (VPC · ALB · API Gateway · Secrets Manager) · External Secrets Operator · GCP |
-| 샘플 앱 | Node.js · Express |
+| :--- | :--- |
+| **AI 검토** | ![Python](https://img.shields.io/badge/Python-0d1117?style=flat-square&logo=python&logoColor=3776AB) ![LangGraph](https://img.shields.io/badge/LangGraph-0d1117?style=flat-square&logo=langgraph&logoColor=4FA3A3) ![Claude](https://img.shields.io/badge/Claude-0d1117?style=flat-square&logo=claude&logoColor=D97757) ![Qdrant](https://img.shields.io/badge/Qdrant-0d1117?style=flat-square&logo=qdrant&logoColor=DC244C) ![fastembed](https://img.shields.io/badge/fastembed-0d1117?style=flat-square) ![Pydantic](https://img.shields.io/badge/Pydantic-0d1117?style=flat-square&logo=pydantic&logoColor=E92063) |
+| **플랫폼** | ![FastAPI](https://img.shields.io/badge/FastAPI-0d1117?style=flat-square&logo=fastapi&logoColor=009688) ![Apache Kafka](https://img.shields.io/badge/Apache%20Kafka-0d1117?style=flat-square&logo=apachekafka&logoColor=FFFFFF) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d1117?style=flat-square&logo=postgresql&logoColor=4169E1) ![Amazon MSK](https://img.shields.io/badge/Amazon%20MSK-0d1117?style=flat-square) ![Amazon RDS](https://img.shields.io/badge/Amazon%20RDS-0d1117?style=flat-square) |
+| **배포 자동화** | ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-0d1117?style=flat-square&logo=githubactions&logoColor=2088FF) ![Argo CD](https://img.shields.io/badge/Argo%20CD-0d1117?style=flat-square&logo=argo&logoColor=EF7B4D) ![Argo Rollouts](https://img.shields.io/badge/Argo%20Rollouts-0d1117?style=flat-square&logo=argo&logoColor=EF7B4D) ![Kustomize](https://img.shields.io/badge/Kustomize-0d1117?style=flat-square) ![Docker](https://img.shields.io/badge/Docker-0d1117?style=flat-square&logo=docker&logoColor=2496ED) ![GHCR](https://img.shields.io/badge/GHCR-0d1117?style=flat-square&logo=github&logoColor=FFFFFF) ![Trivy](https://img.shields.io/badge/Trivy-0d1117?style=flat-square&logo=trivy&logoColor=8A7CFF) |
+| **배포 환경** | ![Kubernetes](https://img.shields.io/badge/Kubernetes-0d1117?style=flat-square&logo=kubernetes&logoColor=326CE5) ![Amazon EKS](https://img.shields.io/badge/Amazon%20EKS-0d1117?style=flat-square) ![GKE](https://img.shields.io/badge/GKE-0d1117?style=flat-square&logo=googlecloud&logoColor=4285F4) ![k3s](https://img.shields.io/badge/k3s-0d1117?style=flat-square&logo=k3s&logoColor=FFC61C) |
+| **모니터링** | ![Prometheus](https://img.shields.io/badge/Prometheus-0d1117?style=flat-square&logo=prometheus&logoColor=E6522C) ![Grafana](https://img.shields.io/badge/Grafana-0d1117?style=flat-square&logo=grafana&logoColor=F46800) |
+| **인프라** | ![Terraform](https://img.shields.io/badge/Terraform-0d1117?style=flat-square&logo=terraform&logoColor=844FBA) ![AWS](https://img.shields.io/badge/AWS-0d1117?style=flat-square) ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-0d1117?style=flat-square&logo=googlecloud&logoColor=4285F4) ![External Secrets](https://img.shields.io/badge/External%20Secrets-0d1117?style=flat-square) |
+| **샘플 앱** | ![Node.js](https://img.shields.io/badge/Node.js-0d1117?style=flat-square&logo=nodedotjs&logoColor=5FA04E) ![Express](https://img.shields.io/badge/Express-0d1117?style=flat-square&logo=express&logoColor=FFFFFF) |
+
+인프라는 VPC · ALB · API Gateway · Secrets Manager 를 Terraform 으로 올렸습니다. 임베딩은 외부 API 가 아니라 로컬 다국어 모델을 씁니다 — 규칙 문서가 한국어입니다.
 
 ## 저장소
 
