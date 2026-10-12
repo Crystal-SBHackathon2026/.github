@@ -14,6 +14,7 @@ SoftBank Hackathon 2026 powered by KOREC & Progate · 예선 2
 ![기간](https://img.shields.io/badge/기간-2026.10.05~10.11-555555?style=flat-square)
 ![장소](https://img.shields.io/badge/장소-부산%20지오파트너스-1D9E75?style=flat-square)
 ![주최](https://img.shields.io/badge/SoftBank%20Hackathon-2026-185FA5?style=flat-square)
+![수상](https://img.shields.io/badge/🏆%20최우수상-FFB300?style=flat-square)
 
 </div>
 
@@ -47,15 +48,15 @@ SoftBank Hackathon 2026 powered by KOREC & Progate · 예선 2
 
 ⑤가 이 시스템의 핵심입니다. "지금 명세만 봐서는 알 수 없는 위험"(DB 엔진 교체, 볼륨 축소 등)을 **이전에 성공한 배포와 비교해서** 잡아냅니다.
 
-## 지금 돌아가는 것
+## 세 환경에 실제로 배포했습니다
 
-| 환경 | 상태 | 배포 방식 | 무엇을 보고 판단하나 |
+| 환경 | | 배포 방식 | 무엇을 보고 판단하나 |
 | --- | --- | --- | --- |
-| 부산 로컬 (k3s) | ✅ 배포됨 | 카나리 | 앱 응답 |
-| 서울 AWS (EKS) | ✅ 배포됨 | 카나리 | 앱 응답 + **에러율** |
-| 도쿄 GCP (GKE) | ✅ 배포됨 | 블루그린 | 사람이 승격 |
+| 부산 로컬 (k3s) | ✅ | 카나리 | 앱 응답 |
+| 서울 AWS (EKS) | ✅ | 카나리 | 앱 응답 + **에러율** |
+| 도쿄 GCP (GKE) | ✅ | 블루그린 | 사람이 승격 |
 
-**같은 소스 커밋 하나가 세 환경에 떠 있습니다.** 환경별로 다른 것은 설정과 배포 방식뿐입니다. 코드 수정부터 배포 완료까지 **2분 14초**입니다 (서울 기준, 사람 승인이 없는 경로).
+**같은 소스 커밋 하나가 세 환경에 떠 있습니다.** 환경별로 다른 것은 설정과 배포 방식뿐입니다. PR을 올리고 **세 환경에 배포될 때까지 1분 47초**입니다 (2026-10-11 실측, 사람이 승인하는 시간 제외).
 
 환경마다 배포 방식이 다른 이유는 조건이 다르기 때문입니다. 서울에는 Prometheus가 있어 "새 버전이 요청의 일부만 실패시키는" 것까지 잡아냅니다. 도쿄는 데이터베이스가 걸려 있어 옛 버전과 새 버전이 섞이면 안 되므로, 새 버전을 옆에 띄워두고 사람이 확인한 뒤 한 번에 바꿉니다.
 
@@ -67,8 +68,8 @@ SoftBank Hackathon 2026 powered by KOREC & Progate · 예선 2
 | [gitops](https://github.com/Crystal-SBHackathon2026/gitops) | Argo CD 배포 설정 (로컬 k3s · AWS EKS · GCP GKE) |
 | [sample-app](https://github.com/Crystal-SBHackathon2026/sample-app) | 데모용 샘플 웹앱 — 어느 환경이 응답했는지 표시 |
 | [sample-todo](https://github.com/Crystal-SBHackathon2026/sample-todo) | 앱 분석·변환 시연용 SQLite 할 일 앱 |
-| [oneaction-infra](https://github.com/Crystal-SBHackathon2026/oneaction-infra) | AWS 인프라 Terraform — VPC · EKS · RDS · MSK · ALB · ESO |
-| Terraform-infrastructure | 위 인프라의 운영 저장소 (비공개) |
+| [oneaction-infra](https://github.com/Crystal-SBHackathon2026/oneaction-infra) | **AWS 인프라 Terraform** — VPC · EKS · RDS · MSK · ALB · ESO |
+| Terraform-infrastructure | 같은 인프라의 운영 저장소. 시크릿이 들어 있어 비공개이며, 위 저장소가 공개용입니다 |
 | [.github](https://github.com/Crystal-SBHackathon2026/.github) | 조직 프로필 · 공용 이슈/PR 템플릿 |
 
 ## 팀원
@@ -111,10 +112,10 @@ SoftBank Hackathon 2026 powered by KOREC & Progate · 예선 2
     <td align="center"><b>CI/CD · 배포 자동화</b></td>
   </tr>
   <tr>
-    <td align="center"><sub>Review API · Kafka<br>워커 실행 틀 · 업무 DB<br>커밋 연동</sub></td>
+    <td align="center"><sub>Review API · Kafka<br>워커 실행 틀 · 업무 DB<br>승인 화면 · 진행 화면</sub></td>
     <td align="center"><sub>정적 검사 · 근거 검색<br>LLM 판단 · 평가셋<br>overlay 렌더러</sub></td>
-    <td align="center"><sub>EKS 구축 · Terraform<br>네트워크 · 시크릿<br>권한</sub></td>
-    <td align="center"><sub>CI 파이프라인 · GitOps<br>Argo CD · 카나리<br>배포 에이전트</sub></td>
+    <td align="center"><sub>EKS · GKE 구축<br>Terraform · 네트워크<br>시크릿 · 권한</sub></td>
+    <td align="center"><sub>CI 파이프라인 · GitOps<br>Argo CD · 카나리<br>모니터링</sub></td>
   </tr>
 </table>
 
@@ -125,7 +126,7 @@ SoftBank Hackathon 2026 powered by KOREC & Progate · 예선 2
 | 10/5 | 킥오프, 팀 빌딩, 역할 분담 |
 | 10/6~10/9 | 사전 개발 — 아키텍처 확정, 각 파트 구현, 전 구간 연결 |
 | 10/10 | Day 1 · 개발, 중간 보고 |
-| 10/11 | Day 2 · 개발, 최종 발표 |
+| 10/11 | Day 2 · 개발, 최종 발표 → **최우수상** |
 
 <div align="center">
 <br>
