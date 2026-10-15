@@ -50,6 +50,14 @@ SoftBank Hackathon 2026 powered by KOREC & Progate · 예선 2
 
 ⑤가 이 시스템의 핵심입니다. "지금 명세만 봐서는 알 수 없는 위험"(DB 엔진 교체, 볼륨 축소 등)을 **이전에 성공한 배포와 비교해서** 잡아냅니다.
 
+### 무엇으로 구성돼 있나
+
+![인프라 구성도](https://raw.githubusercontent.com/Crystal-SBHackathon2026/.github/main/profile/infrastructure.png)
+
+서울 리전 VPC 안에 검토 서비스(Review API · LangGraph 워커 · Qdrant)와 배포 도구(Argo CD · Argo Rollouts)가 함께 있습니다. 업무 데이터는 RDS, 검토 큐는 MSK 입니다. 같은 Argo CD 가 도쿄 GKE 까지 관리하고, 부산 로컬은 자기 클러스터 안의 Argo CD 가 저장소를 직접 읽습니다.
+
+> 그림에는 **설계까지만 간 부분도 들어 있습니다.** 사용자 앱 DB 를 Crossplane 으로 만드는 것(RDS · Cloud SQL)이 그렇습니다. 실제로 돌아간 범위는 아래 「세 환경에 실제로 배포했습니다」 와 [DEMO.md](https://github.com/Crystal-SBHackathon2026/.github/blob/main/profile/DEMO.md) 에 있습니다.
+
 ## 세 환경에 실제로 배포했습니다
 
 | 환경 | | 배포 방식 | 무엇을 보고 판단하나 |
